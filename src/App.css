@@ -1,0 +1,407 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles globaux */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Animations pour l'apparition au défilement */
+.animate-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation de la galerie au survol */
+.gallery-item img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Animation des cartes de service au survol */
+.service-card {
+  transition: all 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-card .service-img img {
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-img img {
+  transform: scale(1.1);
+}
+
+/* Animation des boutons */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Animation du logo */
+.logo {
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  letter-spacing: 2px;
+}
+
+/* Styles améliorés pour la navbar */
+.nav-links a {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: white;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+/* Animation de révélation d'image */
+.reveal-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal-animation::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #a45404;
+  transform: translateX(-100%);
+  animation: reveal 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes reveal {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(101%); }
+}
+
+/* Animation de vague */
+.wave-divider {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' fill='%23a45404'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 1200px 100%;
+  animation: wave 12s linear infinite;
+}
+
+.wave-reverse {
+  transform: rotate(180deg);
+}
+
+@keyframes wave {
+  0% { background-position-x: 0; }
+  100% { background-position-x: 1200px; }
+}
+
+/* Animation de particules */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: float-particle 15s infinite linear;
+}
+
+@keyframes float-particle {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-500px) translateX(100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Animation de progression */
+.progress-bar {
+  height: 4px;
+  width: 100%;
+  background: #e5e7eb;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  z-index: 9999;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background: #a45404;
+  width: 0%;
+  transition: width 0.2s ease;
+}
+
+/* Animation pour le titre principal */
+.hero-title {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-word {
+  opacity: 0;
+  transform: translateY(100%);
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  animation: wordDrop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes wordDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%) rotate(-10deg);
+  }
+  70% {
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+/* Animation de surbrillance finale */
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.text-glow {
+  animation: textGlow 2s ease-in-out infinite;
+}
+
+/* Animation pour les textes des sections */
+.animate-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-text.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation de surbrillance au survol */
+.highlight-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #d98704;
+  transition: width 0.3s ease;
+}
+
+.highlight-hover:hover::after {
+  width: 100%;
+}
+
+/* Animation d'apparition en fondu pour les paragraphes */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: calc(0.2s * var(--item-index));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation de rebondissement doux */
+.bounce-soft {
+  animation: bounceSoft 2s infinite;
+}
+
+@keyframes bounceSoft {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Animation de pulsation colorée */
+.pulse-color {
+  animation: pulseColor 4s infinite;
+}
+
+@keyframes pulseColor {
+  0% {
+    color: #a45404;
+  }
+  50% {
+    color: #d98704;
+  }
+  100% {
+    color: #a45404;
+  }
+}
+
+/* Service features */
+.service-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #035727;
+}
+
+/* Section padding utility */
+.section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.footer a {
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #d98704; /* Couleur dorée sur hover */
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-col h4 {
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-col h4::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #d98704;
+}
+
+/* Animation douce pour le texte du footer */
+.footer .animate-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: footerFadeUp 0.8s ease forwards;
+}
+
+@keyframes footerFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Social links hover */
+.footer .social-links a {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  transform: scale(1.2);
+  background: #d98704;
+  color: #fff;
+}
