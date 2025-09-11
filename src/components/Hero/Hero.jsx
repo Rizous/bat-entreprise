@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAnimations } from '../hooks/useAnimations';
+import { useAnimations } from '../Hooks/useAnimations';
 import './Hero.css';
 
 const Hero = () => {
