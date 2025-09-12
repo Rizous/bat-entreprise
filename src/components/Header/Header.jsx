@@ -35,53 +35,61 @@ const Header = () => {
                     <span className="bar block w-8 h-1 bg-white my-1 transition-all duration-300"></span>
                     <span className="bar block w-8 h-1 bg-white my-1 transition-all duration-300"></span>
                 </button>
-                <ul id="nav-links" className={`nav-links ${isMenuOpen ? 'flex' : 'hidden'} md:flex md:items-center md:space-x-10 list-none h-full`}>
-                    <li className="h-full flex items-center">
-                        <Link
-                            to="/"
-                            className={`text-white text-lg font-medium h-full flex items-center px-2 ${location.pathname === '/' ? 'active' : ''}`}
-                            onClick={closeMenu}
-                        >
-                            Accueil
-                        </Link>
-                    </li>
-                    <li className="h-full flex items-center">
-                        <Link
-                            to="/realisation"
-                            className={`text-white text-lg font-medium h-full flex items-center px-2 ${location.pathname === '/services' ? 'active' : ''}`}
-                            onClick={closeMenu}
-                        >
-                            Realisation
-                        </Link>
-                    </li>
-                    <li className="h-full flex items-center">
-                        <Link
-                            to="/about"
-                            className={`text-white text-lg font-medium h-full flex items-center px-2 ${location.pathname === '/about' ? 'active' : ''}`}
-                            onClick={closeMenu}
-                        >
-                            À propos
-                        </Link>
-                    </li>
-                    <li className="h-full flex items-center">
-                        <Link
-                            to="/team"
-                            className={`text-white text-lg font-medium h-full flex items-center px-2 ${location.pathname === '/team' ? 'active' : ''}`}
-                            onClick={closeMenu}
-                        >
-                            Équipe
-                        </Link>
-                    </li>
-                    <li className="h-full flex items-center">
-                        <Link
-                            to="/contact"
-                            className={`text-white text-lg font-medium h-full flex items-center px-2 ${location.pathname === '/contact' ? 'active' : ''}`}
-                            onClick={closeMenu}
-                        >
-                            Contact
-                        </Link>
-                    </li>
-                </ul>
+<ul
+  id="nav-links"
+  className={`nav-links ${
+    isMenuOpen
+      ? 'flex flex-col absolute top-[90px] left-0 w-full bg-primary z-40 space-y-6 py-6'
+      : 'hidden'
+  } md:flex md:static md:flex-row md:items-center md:space-x-10 md:space-y-0 md:py-0`}
+>
+  <li>
+    <Link
+      to="/"
+      className={`text-white text-lg font-medium px-2 ${location.pathname === '/' ? 'active' : ''}`}
+      onClick={closeMenu}
+    >
+      Accueil
+    </Link>
+  </li>
+  <li>
+    <Link
+      to="/realisation"
+      className={`text-white text-lg font-medium px-2 ${location.pathname === '/services' ? 'active' : ''}`}
+      onClick={closeMenu}
+    >
+      Réalisation
+    </Link>
+  </li>
+  <li>
+    <Link
+      to="/about"
+      className={`text-white text-lg font-medium px-2 ${location.pathname === '/about' ? 'active' : ''}`}
+      onClick={closeMenu}
+    >
+      À propos
+    </Link>
+  </li>
+  <li>
+    <Link
+      to="/team"
+      className={`text-white text-lg font-medium px-2 ${location.pathname === '/team' ? 'active' : ''}`}
+      onClick={closeMenu}
+    >
+      Équipe
+    </Link>
+  </li>
+  <li>
+    <Link
+      to="/contact"
+      className={`text-white text-lg font-medium px-2 ${location.pathname === '/contact' ? 'active' : ''}`}
+      onClick={closeMenu}
+    >
+      Contact
+    </Link>
+  </li>
+</ul>
+
             </nav>
         </header>
     );
