@@ -56,16 +56,16 @@ const Portfolio = () => {
                 </div>
                 <div className="gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <figure className="gallery-item rounded-lg overflow-hidden shadow-md relative animate-item">
-                        <img src="https://pbs.twimg.com/media/FztrmNaX0AAaeRt.jpg" alt="Projet immobilier à Abidjan" loading="lazy" className="w-full h-64 object-cover" />
-                        <figcaption className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 transform translate-y-full transition-transform duration-300">Projet immobilier - Abidjan</figcaption>
+                        <img src="/image/B-1.png" alt="Projet immobilier à Abidjan" loading="lazy" className="w-full h-64 object-cover" />
+                        <figcaption className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 transform translate-y-full transition-transform duration-300">Projet immobilier</figcaption>
                     </figure>
                     <figure className="gallery-item rounded-lg overflow-hidden shadow-md relative animate-item">
-                        <img src="https://media-files.abidjan.net/photo/infrastructure-routiere-visite-des-travaux-de-construction-de-la-voie-de-co_1po4jx2qm7r.jpg" alt="Construction routière en Côte d'Ivoire" loading="lazy" className="w-full h-64 object-cover" />
-                        <figcaption className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 transform translate-y-full transition-transform duration-300">Infrastructure routière - Yamoussoukro</figcaption>
+                        <img src="/image/R-3.png" alt="Construction routière en Côte d'Ivoire" loading="lazy" className="w-full h-64 object-cover" />
+                        <figcaption className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 transform translate-y-full transition-transform duration-300">Infrastructure routière</figcaption>
                     </figure>
                     <figure className="gallery-item rounded-lg overflow-hidden shadow-md relative animate-item">
-                        <img src="https://blog.indobot.co.id/wp-content/uploads/2020/09/10-1140x641.jpg" alt="Ouvrage d'art en construction" loading="lazy" className="w-full h-64 object-cover" />
-                        <figcaption className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 transform translate-y-full transition-transform duration-300">Ouvrage d'art - San Pedro</figcaption>
+                        <img src="/image/H-3.png" alt="Ouvrage d'art en construction" loading="lazy" className="w-full h-64 object-cover" />
+                        <figcaption className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 transform translate-y-full transition-transform duration-300">Ouvrage d'art</figcaption>
                     </figure>
                 </div>
             </div>

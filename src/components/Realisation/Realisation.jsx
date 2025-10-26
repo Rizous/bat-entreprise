@@ -26,68 +26,68 @@ const Realisation = () => {
     const projectsData = {
         Hydraulique: [
             {
-                image: "https://tse3.mm.bing.net/th/id/OIP.5immtxEYEBJj6MLBz6ZpwQHaE4?rs=1&pid=ImgDetMain&o=7&rm=3",
-                title: "Réalisation d'une pompe villagoise",
-                description: "Mise en place d'un système d'irrigation moderne pour optimiser l'utilisation de l'eau dans une exploitation agricole."
+                image: "/image/H-1.png",
+                title: "Travaux de forage",
+                description: "Vue des travaux de foration (avancée par la tarière) et vue des déchets extraits des fonds de forage "
             },
             {
-                image: "https://tse1.mm.bing.net/th/id/OIP.PR3KLJJHBXptiVQi_aFLQAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3",
-                title: "Construction d'une station de traitement d'eau potable",
-                description: "Construction d'une station pour alimenter une communauté en eau sûre et propre."
+                image: "/image/H-2.png",
+                title: "Construction d'une voie d'accès au forage",
+                description: "Vue d’un engin (pelle mécanique) en travaux d’aménagement de la voie d’accès aux points de forage ."
             },
             {
-                image: "https://tse4.mm.bing.net/th/id/OIP.MD5LBwOnvTBvjbZ9nSg9_AHaJ4?w=1200&h=1600&rs=1&pid=ImgDetMain&o=7&rm=3",
-                title: "Aménagement d'un réseau d'assainissement",
-                description: "Amélioration des conditions sanitaires d'une zone résidentielle."
+                image: "/image/H-3.png",
+                title: "Conception et Realisation d'un chateau d'eau",
+                description: " Conception et Realisation d'un chateau d'eau pour l'amélioration des conditions sanitaires d'une zone résidentielle."
             }
         ],
         Bâtiment: [
             {
-                image: "https://tse4.mm.bing.net/th/id/OIP.uT6VuAlag5ccK-DhNcz4yAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
-                title: "Construction d'un complexe résidentiel",
+                image: "/image/B-1.png",
+                title: "Construction d'un complexe hotelier",
                 description: "Logements modernes et espaces communs agréables."
             },
             {
-                image: "https://tse1.mm.bing.net/th/id/OIP.gDZpOSEjYk0aFS-nMaen2gHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3",
-                title: "Rénovation d'un bâtiment administratif",
-                description: "Rénovation pour améliorer l'esthétique et le fonctionnement du bâtiment."
+                image: "/image/B-2.png",
+                title: "Etude-conception et travaux d’une Villa Triplex de 15 pièces ",
+                description: "Projet de Construction d’une Villa Triplex de 15 pièces à Bingerville (Particulier) "
             },
             {
-                image: "https://www.techarena.co.ke/wp-content/uploads/2024/05/PAIX-Data-centres-ghana.webp",
-                title: "Aménagement d'un espace commercial",
-                description: "Espaces attrayants pour accueillir différents types de commerces."
+                image: "/image/B-3.png",
+                title: "Etude-conception et travaux d’Immeuble R+3 (Particulier) ",
+                description: "Projet de Construction d’Immeuble R+3"
             }
         ],
         Électricité: [
             {
-                image: "https://tse1.mm.bing.net/th/id/OIP.4gfEme7t_rpiGFHb2tTAyQHaEw?rs=1&pid=ImgDetMain&o=7&rm=3",
+                image: "/image/E-3.png",
                 title: "Installation d'un réseau électrique domestique",
                 description: "Conception et mise en place d'un réseau électrique sécurisé et conforme aux normes pour un ensemble résidentiel."
             },
             {
-                image: "https://tse4.mm.bing.net/th/id/OIP.8SwzUHIjqWLQa32GMuy4bAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3",
-                title: "Installation de panneaux solaires",
-                description: "Mise en place de panneaux photovoltaïques pour favoriser l'autonomie énergétique et les énergies renouvelables."
+                image: "/image/E-1.png",
+                title: "Travaux d'électrification rurale ",
+                description: "Travaux d'électrification rurale dans le departement de Bouna(Région du bounkani)"
             },
             {
-                image: "https://th.bing.com/th/id/OIP.O4-pbqeR18oqGCb0IrYauAHaE8?w=242&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-                title: "Extension d'un réseau électrique public",
-                description: "Travaux d'extension de lignes électriques pour desservir de nouveaux quartiers et améliorer la distribution d'électricité."
+                image: "/image/E-2.png",
+                title: "Realisation des travaux d'electrification urbaine et rurale",
+                description: "Travaux d'extension de lignes électriques (Maître d’Ouvrage : CI-ENERGIES) "
             }
         ],
         Routes: [
             {
-                image: "https://th.bing.com/th/id/OIP.9K8n-CZqUYjG2_QbOXr8MgHaEZ?w=301&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+                image: "/image/R-1.png",
                 title: "Construction d'une route bitumée",
                 description: "Travaux de construction d'une route bitumée pour relier des zones rurales à des centres urbains."
             },
             {
-                image: "https://th.bing.com/th/id/OIP.fngx1XA0isxAleM9bAtWfwHaE7?w=283&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-                title: "Construction d'un pont routier",
-                description: "Réduction des embouteillages grâce à un pont moderne reliant deux axes stratégiques."
+                image: "/image/R-2.png",
+                title: "Construction de route",
+                description: "Travaux de construction d'une route"
             },
             {
-                image: "https://th.bing.com/th/id/OIP.TXnaqN4yaW1ozP1sj-KLrAHaFj?w=222&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+                image: "/image/R-3.png",
                 title: "Réhabilitation d'une voie dégradée",
                 description: "Travaux de renforcement et de modernisation d'une route endommagée pour améliorer la circulation."
             }

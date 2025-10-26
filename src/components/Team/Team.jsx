@@ -46,7 +46,7 @@ const Team = () => {
                 <div className="team-grid grid grid-cols-1 md:grid-cols-2 gap-8 px-8">
                     <article className="team-member bg-white rounded-lg overflow-hidden shadow-md flex flex-col md:flex-row animate-item">
                         <div className="member-photo flex-none w-full md:w-40">
-                            <img src="https://media.licdn.com/dms/image/v2/C5103AQH6cdCr-4asbA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517276959119?e=2147483647&v=beta&t=q6jTW8aW8pZ8rMpn3kwGDq3VCKHcV0WPnXmCX4-smyY" alt="Directeur général" loading="lazy" className="w-full h-48 md:h-full object-cover" />
+                            <img src="/image/DG-BAT.jpg" alt="Directeur général" loading="lazy" className="w-full h-48 md:h-full object-cover" />
                         </div>
                         <div className="member-info p-6 flex-1">
                             <h3 className="text-xl font-bold highlight-hover">M. Amon Fian</h3>
@@ -57,12 +57,13 @@ const Team = () => {
 
                     <article className="team-member bg-white rounded-lg overflow-hidden shadow-md flex flex-col md:flex-row animate-item">
                         <div className="member-photo flex-none w-full md:w-40">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Directeur technique" loading="lazy" className="w-full h-48 md:h-full object-cover" />
+                            <img src="/image/DT-BAT.png" alt="Directeur technique" loading="lazy" className="w-full h-48 md:h-full object-cover" />
                         </div>
                         <div className="member-info p-6 flex-1">
                             <h3 className="text-xl font-bold highlight-hover">M. Djeni Kpele</h3>
                             <p className="position text-secondary font-semibold mb-2 pulse-color">Directeur technique</p>
-                            <p>Spécialiste en infrastructures urbaines.</p>
+                            <p>Ingénieur Hydraulicien <br />
+                            Spécialiste en Forages Hydrogéologue </p>
                         </div>
                     </article>
                 </div>
