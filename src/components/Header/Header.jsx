@@ -21,7 +21,7 @@ const Header = () => {
         <header className="bg-primary fixed top-0 left-0 right-0 z-50 shadow-lg" style={{ height: '90px' }}>
             <nav className="navbar h-full flex justify-between items-center px-6 py-0" aria-label="Navigation principale">
                 <Link to="/" className="logo text-white text-3xl font-bold flex items-center" aria-label="BAT Enterprise - Retour à l'accueil" style={{ height: '100%' }}>
-                    <span className="transition-all duration-300">BAT Enterprise</span>
+                          <img src="/image/logo1.png" alt="Logo du site" width="170" />
                 </Link>
                 <button
                     className={`mobile-menu-toggle md:hidden text-white text-2xl flex flex-col justify-center items-center w-10 h-10 ${isMenuOpen ? 'open' : ''}`}

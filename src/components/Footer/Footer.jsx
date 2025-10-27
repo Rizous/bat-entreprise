@@ -8,6 +8,7 @@ const Footer = () => {
             <div className="container mx-auto px-6">
                 <div className="footer-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                     <div className="footer-col">
+                        <img src="/image/logo.png" alt="Logo du site" width="170" />
                         <h3 className="footer-logo text-2xl font-bold mb-4 highlight-hover">BAT Enterprise</h3>
                         <p className="animate-text">Votre partenaire en construction durable en Côte d'Ivoire.</p>
                     </div>
