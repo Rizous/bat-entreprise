@@ -27,7 +27,7 @@ function AnimatedRoutes() {
 
 function App() {
     return (
-        <Router basename="/BAT-Entreprise">
+        <Router basename="">
             <ScrollToTop />
             <div className="App">
                 <Header />
